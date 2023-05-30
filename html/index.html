@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>데이터 입력 예시</title>
+        <style>
+          .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+          input[type="text"], input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <h1>데이터 입력</h1>
+          <form id="dataForm">
+            <input type="text" id="dataInput" placeholder="데이터를 입력하세요">
+            <input type="submit" value="제출">
+          </form>
+          <h2>입력한 데이터</h2>
+          <ul id="dataList"></ul>
+        </div>
+      
+        <script>
+          document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var dataInput = document.getElementById('dataInput');
+            var dataList = document.getElementById('dataList');
+            var listItem = document.createElement('li');
+            listItem.innerText = dataInput.value;
+            dataList.appendChild(listItem);
+            dataInput.value = '';
+          });
+        </script>
+        
+    </body>
+</html>
