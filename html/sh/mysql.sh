@@ -1,7 +1,5 @@
 rm /etc/localtime
 
-
-
 ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 sudo echo "ZONE="Asia/Seoul" 
@@ -13,10 +11,17 @@ UTC=true /etc/sysconfig/clock"
 
 sudo yum install wget
 
-wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm
-
-sudo yum install http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-sudo yum install mysql-community-server -y
+sudo wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+sudo yum -y install https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+sudo yum -y install mysql-community-server
 
 sudo systemctl enable mysqld
 sudo systemctl start mysqld
+
+
+
+mysql >>>
+create database test;
+use test;
+
+create table number( id int(5) NOT NULL );

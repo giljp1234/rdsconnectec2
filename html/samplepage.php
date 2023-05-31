@@ -10,15 +10,15 @@
 
  /* Connect to MySQL and select the database. */
 
-  $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
+  $connection = mysqli_connect(test, admin, wnsvy486);
 
   if(mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
-   $database = mysqli_select_db($connection, DB_DATABASE);
+   $database = mysqli_select_db($connection, test);
 
   /* Ensure that the Employees table exists. */
 
-  VerifyEmployeesTable($connection, DB_DATABASE);
+  VerifyEmployeesTable($connection, test);
 
   /* If input fields are populated, add a row to the Employees table. */
 
