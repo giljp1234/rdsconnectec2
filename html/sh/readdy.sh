@@ -14,3 +14,5 @@ sudo python3 -m pip install boto3
 #ec2로 가서 명령어 진행 
 
 aws dynamodb scan --table-name test --region ap-northeast-2
+
+python3 dynamodb.py
