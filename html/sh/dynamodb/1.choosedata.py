@@ -33,3 +33,6 @@ for item in items:
 #items = response['Items']: 쿼리 결과인 response에서 실제 항목들을 가져옵니다. response['Items']는 리스트 형태로 반환되며, 각 항목은 딕셔너리 형태로 표현됩니다.
 
 #for item in items: ...: 가져온 항목들을 반복하면서 각 항목을 출력합니다. 이 부분을 원하는대로 수정하여 항목의 특정 속성만 출력하거나 원하는 방식으로 활용할 수 있습니다.
+
+# number 를 고르면 
+# 그에 맞는 데이터가 쭉 나옴 !

@@ -39,3 +39,10 @@ additional_value = input("추가할 문자열 입력: ")
 
 # 데이터 select 후 update
 select_update_item(table_name, condition_key, condition_value, update_key, additional_value)
+
+
+
+# 이것도 안됨 
+# 5번은 다시 해봐야댐
+# 5번은 다시해
+# 5번 다시
