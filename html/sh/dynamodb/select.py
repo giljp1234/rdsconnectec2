@@ -1,4 +1,4 @@
-import boto3
+import boto3 #(aws에서 제공하는 서비스에 접근할 수 있도록 만들어진 라이브러리)
 
 dynamodb = boto3.resource('dynamodb', region_name='ap-northeast-2')
 table = dynamodb.Table('test')

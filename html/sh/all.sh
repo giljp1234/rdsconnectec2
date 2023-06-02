@@ -43,7 +43,7 @@ sudo systemctl start mysqld
 
 sudo yum install pip
 sudo python3 -m pip install pymysql
-pip install mysql-connector-python
+#pip install mysql-connector-python
 
 python3 rds.py
 
