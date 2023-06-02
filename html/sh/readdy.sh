@@ -12,7 +12,12 @@ sudo python3 -m pip install boto3
 #작업> 보안 > iam역할 수정
 #ec2-dynamo 선택 후 저장 
 #ec2로 가서 명령어 진행 
-
+aws configure 
 aws dynamodb scan --table-name test --region ap-northeast-2
 
 python3 dynamodb.py
+
+
+
+
+#CRUD 

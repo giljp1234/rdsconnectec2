@@ -7,13 +7,13 @@ table = dynamodb.Table('test')
 
 number = int(input("번호: "))
 name = str(input("이름: "))
-addr = str(input("주소: "))
+
 
 table.put_item(
     Item={
         'number': number,
-        'name': name,
-        'addr': addr
+        'name': name
+
     }
 )
 
