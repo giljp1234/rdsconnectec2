@@ -1,0 +1,10 @@
+
+
+DynamoDB 테이블 정보 
+
+이름 : test 
+
+파티션 키 number (number) 숫자 
+
+정렬 키 name (string) 문자열
+

@@ -20,6 +20,10 @@ items = response['Items']
 for item in items:
     print(item)
 
+# number 값 기준으로 원하는 번호를 불러와서 
+# name 값을 볼 수 있음 !!!!!!!!
+
+
 ##import boto3: boto3 모듈을 임포트합니다. 이 모듈은 AWS SDK를 사용하여 DynamoDB와 상호작용하는 데 사용됩니다.
 
 #dynamodb = boto3.client('dynamodb', region_name='ap-northeast-2'): boto3를 사용하여 DynamoDB 클라이언트를 생성합니다. 이 클라이언트를 통해 DynamoDB와 통신할 수 있습니다.

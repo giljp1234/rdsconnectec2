@@ -1,7 +1,7 @@
 import boto3
 
 def select_update_item(table_name, condition_key, condition_value, update_key, update_value):
-    dynamodb = boto3.resource('dynamodb')
+    dynamodb = boto3.resource('dynamodb', region_name='ap-northeast-2')
     table = dynamodb.Table('test')
 
     response = table.scan(
