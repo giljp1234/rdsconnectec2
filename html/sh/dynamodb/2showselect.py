@@ -56,3 +56,15 @@ for item in items:
     item[key_name] = value  # * len(str(item[key_name]))  # number 또는 name을 *로 대체
     
     print(item)
+
+
+
+
+#56번째 줄 value 를 * 로 바꾸면 
+#입력받은 데이터는 * 로 나옴
+# 입력받은 데이터 기준으로 데이터들이 다 나옴 !
+#(ex) 입력값 number = 10 
+# 10으로 이루어진 name 값들 출력 
+
+# 입력값 name = (x)
+# name이 (x)인 number 들 출력 

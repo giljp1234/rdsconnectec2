@@ -1,3 +1,8 @@
+#원하는 number 값으로 name 값 보여주기 !!
+# ex / number = 10 
+# number ( 10, 10, 10, 10)
+# name   (  a,  b,  c,  d)
+
 import boto3
 
 dynamodb = boto3.client('dynamodb', region_name='ap-northeast-2')

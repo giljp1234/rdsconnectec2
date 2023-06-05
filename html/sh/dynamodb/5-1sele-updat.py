@@ -43,3 +43,8 @@ update_name = input("update name: ")
 
 # 데이터 select 후 update
 select_update_item(table_name, condition_number, condition_name, update_number, update_name)
+
+
+#데이터가 저장되어있는 상태에서 수정하려면
+#데이터를 삭제하고 다시 만들어야한다고함 .....
+# 그래서 데이터 정보 확인 > 삭제 > 생성 으로해서 가능.
