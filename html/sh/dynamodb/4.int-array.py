@@ -25,6 +25,6 @@ print("데이터 저장 완료")
 #schema에 맞게 해야함 
 #ex) DB생성시 (number = 숫자 , name=문자열로 test라는 테이블 만듬)
 #코드에서도 number ==int name == 문자 (string) 으로 지정해야하고
-#그에 맞는 값 number == 1 , name == something 처럼 받아야
+#그에 맞는 값 number == 숫자 , name == 문자 처럼 받아야
 #저장이 가능한 것 같음 !
 
