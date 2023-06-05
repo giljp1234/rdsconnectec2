@@ -15,7 +15,7 @@ import boto3
 
 dynamodb = boto3.client('dynamodb', region_name='ap-northeast-2')
 
-choice = input("number 또는 name 중 하나를 선택하세요: ")
+choice = input("number 또는 name 중 하나를 선택하세요 or all: ")
 
 if choice == 'number':
     key_name = 'number'
@@ -53,6 +53,6 @@ else:
 items = response['Items']
 
 for item in items:
-    item[key_name] = value  # number 또는 name을 *로 대체
+    item[key_name] = value  # * len(str(item[key_name]))  # number 또는 name을 *로 대체
     
     print(item)
