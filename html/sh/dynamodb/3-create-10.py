@@ -8,6 +8,13 @@ def batch_write_items(test, items):
         for item in items:
             batch.put_item(Item=item)
 
+def insertItem(tableName, itemInfo):
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table(tableName)
+
+    with table.batch_writer() as batch:
+        batch.put_item(Item=item)
+#dynamodb 의 데이터는 def 밖에 resource 로 받아서 빠져있어야함 
 # 데이터 예시
 items = [
 #    {'number': 1, 'name': 'a'},
@@ -19,7 +26,8 @@ for i in range(1, 26):
     key = int(i)
     value = chr(ord('a') + i - 1)
     item = {'number': key, 'name': value}
-    items.append(item)
+    #items.append(item)
+    insertItem('test', item)
 
 print(items)
 

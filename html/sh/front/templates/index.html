@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DynamoDB와 연동 예시</title>
+    <script>
+        function validateForm() {
+          var keyInput = document.getElementById('key');
+          var valueInput = document.getElementById('value');
+  
+          if (keyInput.value.trim() === '' || valueInput.value.trim() === '') {
+            alert('Key와 Value를 모두 입력해주세요.');
+            return false;
+          }
+  
+          return true;
+        }
+
+      </script>
+  </head>
+  <body>
+    <h1>DynamoDB와 연동 예시</h1>
+    <form action="/save" method="post">
+      <label for="key">Key:</label>
+      <input type="text" id="key" name="number" required>
+      <label for="value">Value:</label>
+      <input type="text" id="value" name="name" required>
+      <button type="submit" onclick="return validateForm()">Save</button>
+    </form>
+  </body>
+</html>
+
